@@ -4,20 +4,19 @@ on:
   push:
     branches:
       - master
-      
+
 jobs:
   publish-gpr:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with: 
-          node-version 16
-          registry-url https://npm.pkg.github.com
-          scope '@NpmSimplePackage'
-      - run: npm install
-      - run: npm publish
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 16
+        registry-url: https://npm.pkg.github.com
+        scope: '@NsSimplePackage'
+    - run: npm install
+    - run: npm publish
     env:
-      NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        
-      
+      NODE_AUTH_TOKEN: $${{secrets.GITHUB_TOKEN}}
