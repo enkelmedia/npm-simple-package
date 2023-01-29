@@ -7,7 +7,7 @@
   "author": "Markus Johansson",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@enkelmedia"
+    "registry": "https://npm.pkg.github.com/"
   },  
   "files": [
     "dist"
