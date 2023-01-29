@@ -1,6 +1,6 @@
 {
   "name": "@enkelmedia/npm-simple-package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My first test-package with TypeScript",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
