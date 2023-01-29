@@ -1,11 +1,14 @@
 {
-  "name": "@npmsimplepackage/macson-typescript-pg",
+  "name": "macson-typescript-pg",
   "version": "1.0.0",
   "description": "My first test-package with TypeScript",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "author": "Markus Johansson",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@enkelmedia"
+  },  
   "files": [
     "dist"
   ],
